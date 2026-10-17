@@ -1,8 +1,8 @@
 class Solution:
     def isValidSudoku(self, board: list[list[str]]) -> bool:
-        rows = defaultdict(list)
-        columns = defaultdict(list)
-        squares = defaultdict(list)
+        rows = collections.defaultdict(list)
+        columns = collections.defaultdict(list)
+        squares = collections.defaultdict(list)
 
         for i in range(9):
             for j in range(9):
